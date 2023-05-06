@@ -1,0 +1,139 @@
+<!-- Alexander Carron - Date Here -->
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<!-- ! METADATA -->
+		<meta charset='UTF-8'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<meta name='author' content='Alexander Carron'>
+		<meta
+			name='description'
+			content='description'
+		>
+		<meta
+			name='keywords'
+			content='keyword'
+		>
+
+		<!-- ! EXTERNAL FILES -->
+		<link rel='stylesheet' href='./styles/meyer-reset.css' type='text/css'>
+		<link rel='stylesheet' href='./styles/main.css' type='text/css'>
+		<script src='./scripts/index.js' type="module"></script>
+
+		<title> Document </title>
+	</head>
+
+	<body>
+
+
+		<!-- ^ NAVIGATION MENU -->
+		<nav>
+
+			<a href="./index.html">Add Activities</a>
+			<a href="./search.html">Search For An Activity</a>
+
+		</nav>
+
+
+		<!-- ^ HEADER -->
+		<header>
+
+		</header>
+
+
+		<!-- ^ MAIN -->
+		<main>
+
+			<section>
+
+				<form name="add_activity" method="get" id="add_activity_form">
+					<div class="inline_inputs_wrapper">
+						<div class="input">
+							<label for="min_duration_amount"> Minimum time you have: </label>
+							<div class="input_select_wrapper">
+								<input type="number" id="min_duration_amount_input" name="min_duration_amount" placeholder="0" value="0">
+								<select id="min_duration_unit_select" name="min_duration_unit">
+								</select>
+							</div>
+						</div>
+						<div class="input">
+							<label for="max_duration"> Maximum time you have: </label>
+							<div class="input_select_wrapper">
+								<input type="number" id="max_duration_amount_input" name="max_duration" placeholder="0" value="10">
+								<select id="max_duration_unit_select" name="max_duration_unit">
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="input">
+						<label for="focus_selection"> Select all focus you can give: </label>
+						<select id="focus_select" name="focus_selection" multiple size="5">
+						</select>
+					</div>
+
+					<div class="input">
+						<label for="items_selection"> Select all items you have: </label>
+						<select id="items_select" name="items_selection" multiple>
+						</select>
+					</div>
+
+					<div class="inline_inputs_wrapper">
+						<div class="input">
+							<label for="min_participants"> Minimum participants available: </label>
+							<input type="number" id="min_participants_input" name="min_participants" min="1" placeholder="0" value="0">
+						</div>
+						<div class="input">
+							<label for="max_participants"> Maximum participants available: </label>
+							<input type="number" id="max_participants_input" name="max_participants" min="1" placeholder="0" value="1">
+						</div>
+					</div>
+
+					<div class="input">
+						<div class="checkbox_wrapper">
+							<input type="checkbox" id="need_internet_checkbox" name="needInternet" value="true" min="1" checked="checked">
+							<label for="needInternet"> Have Internet Connection? </label>
+						</div>
+					</div>
+
+					<div class="input">
+						<label for="isProductive"> Do you want to be productive? </label>
+						<select id="is_productive_select" name="isProductive">
+						</select>
+					</div>
+
+					<div class="input">
+						<label for="enjoyment_level"> What's the minimum enjoyment level you want? </label>
+						<input type="range" id="enjoyment_level_input" name="enjoyment_level" min="0" max="5">
+						<select id="enjoyment_level_select" name="enjoyment_level_selection">
+						</select>
+					</div>
+
+					<div class="input">
+						<label for="required_place"> What place will this activity occur? </label>
+						<select id="required_place_select" name="required_place">
+						</select>
+					</div>
+
+					<button type="button" id="search_for_activity_button" value="Search For Activity"> Search For Activity </button>
+					<button type="button" id="random_activity_button" value="Generate Random Activity"> Generate Random Activity </button>
+				</form>
+
+
+
+			</section>
+
+			<section id="activities_result_section">
+			</section>
+
+		</main>
+
+
+		<!-- ^ FOOTER -->
+		<footer>
+
+		</footer>
+
+	</body>
+</html>

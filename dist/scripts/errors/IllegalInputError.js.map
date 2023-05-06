@@ -1,0 +1,1 @@
+{"version":3,"file":"IllegalInputError.js","sourceRoot":"","sources":["../../../src/errors/IllegalInputError.ts"],"names":[],"mappings":"AAAA,MAAM,OAAO,iBAAkB,SAAQ,KAAK;IAC3C,YACQ,aAAqB,EAC5B,OAAe;QAEf,KAAK,CAAC,GAAG,OAAO,MAAM,aAAa,GAAG,CAAC,CAAC;QAHjC,kBAAa,GAAb,aAAa,CAAQ;QAI5B,IAAI,CAAC,IAAI,GAAG,mBAAmB,CAAC;QAChC,IAAI,CAAC,aAAa,GAAG,aAAa,CAAC;IACpC,CAAC;CACD"}

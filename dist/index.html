@@ -1,0 +1,144 @@
+<!-- Alexander Carron - Date Here -->
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<!-- ! METADATA -->
+		<meta charset='UTF-8'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<meta name='author' content='Alexander Carron'>
+		<meta
+			name='description'
+			content='description'
+		>
+		<meta
+			name='keywords'
+			content='keyword'
+		>
+
+		<!-- ! EXTERNAL FILES -->
+		<link rel='stylesheet' href='./styles/meyer-reset.css' type='text/css'>
+		<link rel='stylesheet' href='./styles/main.css' type='text/css'>
+		<script src='./scripts/index.js' type="module"></script>
+
+		<title> Document </title>
+	</head>
+
+	<body>
+
+
+		<!-- ^ NAVIGATION MENU -->
+		<nav>
+
+			<a href="./index.html">Add Activities</a>
+			<a href="./search.html">Search For An Activity</a>
+
+		</nav>
+
+
+		<!-- ^ HEADER -->
+		<header>
+
+		</header>
+
+
+		<!-- ^ MAIN -->
+		<main>
+
+			<section>
+
+				<form name="add_activity" method="get" id="add_activity_form">
+					<div class="input">
+						<label for="activity_name"> Activity Name: </label>
+						<input name="activity_name" type="text" id="activity_name_input" placeholder="Activity Name" value="Walking">
+					</div>
+
+					<div class="input">
+						<label for="activity_description"> Activity Description: </label>
+						<input name="activity_description" type="text" id="activity_description_input" placeholder="Description of activity" value="a low-impact physical activity that involves moving on foot at a moderate pace.">
+					</div>
+
+					<div class="inline_inputs_wrapper">
+						<div class="input">
+							<label for="min_duration_amount"> Minimum Duration: </label>
+							<div class="input_select_wrapper">
+								<input type="number" id="min_duration_amount_input" name="min_duration_amount" placeholder="0" value="0">
+								<select id="min_duration_unit_select" name="min_duration_unit">
+								</select>
+							</div>
+						</div>
+						<div class="input">
+							<label for="max_duration"> Maximum Duration: </label>
+							<div class="input_select_wrapper">
+								<input type="number" id="max_duration_amount_input" name="max_duration" placeholder="0" value="0">
+								<select id="max_duration_unit_select" name="max_duration_unit">
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="input">
+						<label for="focus_selection"> Which focuses are needed? </label>
+						<select id="focus_select" name="focus_selection" multiple size="5">
+						</select>
+					</div>
+
+					<div class="input">
+						<label for="items_selection"> Which items are needed? </label>
+						<select id="items_select" name="items_selection" multiple>
+						</select>
+					</div>
+
+					<div class="inline_inputs_wrapper">
+						<div class="input">
+							<label for="min_participants"> Minimum Number Participants Needed: </label>
+							<input type="number" id="min_participants_input" name="min_participants" min="1" placeholder="0" value="0">
+						</div>
+						<div class="input">
+							<label for="max_participants"> Maximum Number Participants Needed: </label>
+							<input type="number" id="max_participants_input" name="max_participants" min="1" placeholder="0" value="0">
+						</div>
+					</div>
+
+					<div class="input">
+						<div class="checkbox_wrapper">
+							<input type="checkbox" id="need_internet_checkbox" name="needInternet" value="true" min="1">
+							<label for="needInternet"> Needs Internet? </label>
+						</div>
+						<div class="checkbox_wrapper">
+							<input type="checkbox" id="is_productive_checkbox" name="isProductive" value="true" min="1">
+							<label for="isProductive"> Is It Productive? </label>
+						</div>
+					</div>
+
+					<div class="input">
+						<label for="enjoyment_level"> How much do you enjoy it? </label>
+						<input type="range" id="enjoyment_level_input" name="enjoyment_level" min="0" max="5">
+					</div>
+
+					<div class="input">
+						<label for="required_place"> What place does it occur? </label>
+						<select id="required_place_select" name="required_place">
+						</select>
+					</div>
+
+					<button type="button" id="add_activity_button" value="Add Activity"> Add Activity </button>
+				</form>
+
+
+
+			</section>
+
+			<section id="activities_section">
+			</section>
+
+		</main>
+
+
+		<!-- ^ FOOTER -->
+		<footer>
+
+		</footer>
+
+	</body>
+</html>

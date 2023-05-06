@@ -1,0 +1,29 @@
+{
+  "name": "recreational-activity-generator",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A node.js command line application that generators a recreational activity for you to do based on your preferences",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node dist/scripts/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexcarron/recreational-activity-generator.git"
+  },
+  "author": "Alex Carron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexcarron/recreational-activity-generator/issues"
+  },
+  "homepage": "https://github.com/alexcarron/recreational-activity-generator#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "@types/readline-sync": "^1.4.4",
+    "typescript": "^5.0.2"
+  }
+}

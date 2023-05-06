@@ -1,0 +1,1 @@
+{"version":3,"file":"IllegalIntergerInputError.js","sourceRoot":"","sources":["../../../src/errors/IllegalIntergerInputError.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,iBAAiB,EAAE,MAAO,wBAAwB,CAAA;AAE3D,MAAM,OAAO,wBAAyB,SAAQ,iBAAiB;IAC9D,YACQ,aAAqB;QAE5B,KAAK,CAAC,aAAa,EAAE,sCAAsC,CAAC,CAAC;QAFtD,kBAAa,GAAb,aAAa,CAAQ;IAG7B,CAAC;CACD"}

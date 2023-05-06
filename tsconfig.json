@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"module": "es2020", /* The module code generation mode is commonjs */
+		"esModuleInterop": true, /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+		"target": "es6", /* The version of ECMAScript that the TypeScript compiler should target when generating JavaScript code is ES6 */
+		"moduleResolution": "node", /* The process of determining the location of a module that is being imported is Node.js’ CommonJS implementation */
+		"sourceMap": true, /* Enables the generation of sourcemap files which allow debuggers and other tools to display the original TypeScript source code when actually working with the emitted JavaScript files */
+		"outDir": "dist/scripts", /* The directory .js files will be emitted into. */
+		"strictNullChecks": true, /* null and undefined have their own distinct types and you’ll get a type error if you try to use them where a concrete value is expected */
+		"forceConsistentCasingInFileNames": true, /* Ensure that casing is correct in imports. */
+		"strict": true, /* Enable all strict type-checking options. */
+		"skipLibCheck": true /* Skip type checking all .d.ts files. */,
+		"strictPropertyInitialization": true, /* Class fields need to be initialized in the constructor */
+		"lib": ["es6", "dom", "es2022"],
+	},
+	"include": [
+		"src/**/*"
+	],
+	"exclude": [
+		"node_modules"
+	],
+	"lib": ["es2022"]
+}
