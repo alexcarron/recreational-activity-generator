@@ -295,8 +295,45 @@ function main() {
 	const max_duration_unit_select = <HTMLSelectElement> document.querySelector("select#max_duration_unit_select");
 	const enjoyment_level_select = <HTMLSelectElement> document.querySelector("select#enjoyment_level_select");
 	const is_productive_select = <HTMLSelectElement> document.querySelector("select#is_productive_select");
+	const num_buttons: NodeListOf<HTMLButtonElement> = document.querySelectorAll("button.num_button");
 
 	console.log({focus_select, items_select, required_place_select});
+
+
+	num_buttons.forEach(
+		(num_button) => {
+			console.log({num_button});
+
+			num_button.onclick = () => {
+				const num_adding: number = parseInt(num_button.textContent ? num_button.textContent : "0");
+				const for_element_name = num_button.getAttribute("for");
+				const for_element: HTMLInputElement = <HTMLInputElement> document.querySelector(`[name="${for_element_name}"]`);
+
+
+				if (for_element) {
+					console.log({num_adding, for_element_name});
+					console.log(for_element);
+
+					let num: number = 0;
+					if (for_element.textContent) {
+						num = parseInt(for_element?.textContent);
+					}
+
+					if (num_adding !== 0)
+						num += num_adding
+					else
+						num = 0;
+
+					console.log({num});
+
+					for_element.textContent = Parser.parseStrFromNumber(num);
+					for_element.value = Parser.parseStrFromNumber(num);
+
+					console.log(for_element);
+				}
+			}
+		}
+	)
 
 	addEnumOptionsToSelection(focus_select, Focus, Focus.Visual);
 	addEnumOptionsToSelection(items_select, Item, Item.Phone);

@@ -120,7 +120,7 @@ export const activities = [
         num_participants_needed: new NumRange(1, 1),
         needInternet: true,
         isProductive: YesNoCheckbox.Yes,
-        enjoyment_level: EnjoymentLevel.Pleasant,
+        enjoyment_level: EnjoymentLevel.Mediocre,
         required_place: Place.Anywhere
     }),
     new Activity({
@@ -148,6 +148,18 @@ export const activities = [
         required_place: Place.Anywhere
     }),
     new Activity({
+        name: "Watch A Youtube Series",
+        description: "Pick a long-term series to watch and watch it",
+        duration_range: new NumRange(new Duration(20, UnitOfTime.Minutes), new Duration(12, UnitOfTime.Hours)),
+        required_focuses: [Focus.Engagement, Focus.Auditory],
+        required_devices: [Item.Phone],
+        num_participants_needed: new NumRange(1, 1),
+        needInternet: true,
+        isProductive: YesNoCheckbox.No,
+        enjoyment_level: EnjoymentLevel.Enjoyable,
+        required_place: Place.Anywhere
+    }),
+    new Activity({
         name: "Play Arcaea",
         description: "",
         duration_range: new NumRange(new Duration(5, UnitOfTime.Minutes), new Duration(12, UnitOfTime.Hours)),
@@ -158,6 +170,30 @@ export const activities = [
         isProductive: YesNoCheckbox.No,
         enjoyment_level: EnjoymentLevel.Enjoyable,
         required_place: Place.Home
+    }),
+    new Activity({
+        name: "Play Project Sekai",
+        description: "",
+        duration_range: new NumRange(new Duration(5, UnitOfTime.Minutes), new Duration(12, UnitOfTime.Hours)),
+        required_focuses: [Focus.Visual, Focus.Engagement, Focus.Auditory],
+        required_devices: [Item.Phone],
+        num_participants_needed: new NumRange(1, 1),
+        needInternet: true,
+        isProductive: YesNoCheckbox.No,
+        enjoyment_level: EnjoymentLevel.Enjoyable,
+        required_place: Place.Anywhere
+    }),
+    new Activity({
+        name: "Improve Activity Generator",
+        description: "",
+        duration_range: new NumRange(new Duration(20, UnitOfTime.Minutes), new Duration(12, UnitOfTime.Hours)),
+        required_focuses: [Focus.Visual, Focus.Engagement, Focus.Textual],
+        required_devices: [Item.Computer],
+        num_participants_needed: new NumRange(1, 1),
+        needInternet: false,
+        isProductive: YesNoCheckbox.Yes,
+        enjoyment_level: EnjoymentLevel.Pleasant,
+        required_place: Place.Anywhere
     }),
     new Activity({
         name: "Play Town of Salem",
@@ -397,6 +433,18 @@ export const activities = [
         needInternet: false,
         isProductive: YesNoCheckbox.Yes,
         enjoyment_level: EnjoymentLevel.Boring,
+        required_place: Place.Anywhere
+    }),
+    new Activity({
+        name: "Organize Your Music",
+        description: "",
+        duration_range: new NumRange(new Duration(10, UnitOfTime.Minutes), new Duration(12, UnitOfTime.Hours)),
+        required_focuses: [Focus.Auditory],
+        required_devices: [Item.Computer],
+        num_participants_needed: new NumRange(1, 1),
+        needInternet: false,
+        isProductive: YesNoCheckbox.Yes,
+        enjoyment_level: EnjoymentLevel.Mediocre,
         required_place: Place.Anywhere
     }),
     new Activity({

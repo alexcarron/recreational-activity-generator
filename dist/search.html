@@ -48,24 +48,42 @@
 			<section>
 
 				<form name="add_activity" method="get" id="add_activity_form">
-					<div class="inline_inputs_wrapper">
 						<div class="input">
 							<label for="min_duration_amount"> Minimum time you have: </label>
-							<div class="input_select_wrapper">
-								<input type="number" id="min_duration_amount_input" name="min_duration_amount" placeholder="0" value="0">
-								<select id="min_duration_unit_select" name="min_duration_unit">
-								</select>
+							<div class="num_pad_input_wrapper">
+								<div class="input_select_wrapper">
+									<input type="number" id="min_duration_amount_input" name="min_duration_amount" placeholder="0" value="0">
+									<select id="min_duration_unit_select" name="min_duration_unit">
+									</select>
+								</div>
+								<div class="num_pad_grid">
+									<button type="button" class="num_button" for="min_duration_amount">0</button>
+									<button type="button" class="num_button" for="min_duration_amount">1</button>
+									<button type="button" class="num_button" for="min_duration_amount">5</button>
+									<button type="button" class="num_button" for="min_duration_amount">10</button>
+									<button type="button" class="num_button" for="min_duration_amount">30</button>
+									<button type="button" class="num_button" for="min_duration_amount">60</button>
+								</div>
 							</div>
 						</div>
 						<div class="input">
 							<label for="max_duration"> Maximum time you have: </label>
-							<div class="input_select_wrapper">
-								<input type="number" id="max_duration_amount_input" name="max_duration" placeholder="0" value="10">
-								<select id="max_duration_unit_select" name="max_duration_unit">
-								</select>
+							<div class="num_pad_input_wrapper">
+								<div class="input_select_wrapper">
+									<input type="number" id="max_duration_amount_input" name="max_duration" placeholder="0" value="10">
+									<select id="max_duration_unit_select" name="max_duration_unit">
+									</select>
+								</div>
+								<div class="num_pad_grid">
+									<button type="button" class="num_button" for="max_duration">0</button>
+									<button type="button" class="num_button" for="max_duration">1</button>
+									<button type="button" class="num_button" for="max_duration">5</button>
+									<button type="button" class="num_button" for="max_duration">10</button>
+									<button type="button" class="num_button" for="max_duration">30</button>
+									<button type="button" class="num_button" for="max_duration">60</button>
+								</div>
 							</div>
 						</div>
-					</div>
 
 					<div class="input">
 						<label for="focus_selection"> Select all focus you can give: </label>
@@ -105,7 +123,6 @@
 
 					<div class="input">
 						<label for="enjoyment_level"> What's the minimum enjoyment level you want? </label>
-						<input type="range" id="enjoyment_level_input" name="enjoyment_level" min="0" max="5">
 						<select id="enjoyment_level_select" name="enjoyment_level_selection">
 						</select>
 					</div>

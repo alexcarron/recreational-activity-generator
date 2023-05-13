@@ -83,7 +83,7 @@ body > header {
 	/* @ SECTIONS */
 	main>section {
 		box-sizing: border-box;
-		padding: 5vw 4vw;
+		padding: 100px 80px;
 
 		background-color: var(--neutral-most-light-color);
 
@@ -198,7 +198,7 @@ footer {
 	align-items: flex-start;
 
 	background-color: var(--main-dark-color);
-	box-shadow: 0 0 2vw #000000;
+	box-shadow: 0 0 40px #000000;
 
 	color: var(--main-light-color);
 	text-align: center;
@@ -278,19 +278,19 @@ strong {
 .inline_inputs_wrapper {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 2vw;
+	gap: 40px;
 }
 
 /* style for form inputs */
 .input {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 2vw;
+	margin-bottom: 40px;
 }
 
 .input label {
 	font-weight: bold;
-	font-size: 1.5vw;
+	font-size: 30px;
 }
 
 .input input[type="text"],
@@ -298,53 +298,54 @@ strong {
 .input select,
 .input input[type="range"] {
 	box-sizing: border-box;
-	padding: 1vw;
+	padding: 20px;
 	border: none;
-	border-radius: .5vw;
+	border-radius: 10px;
 	background-color: #f5f5f5;
 	color: #333;
-	font-size: 1.3vw;
+	font-size: 26px;
 	line-height: 1.5;
 	width: 100%;
-	margin-top: .4vw;
+	margin-top: 8px;
 }
 
 .input select:not([multiple]) {
 	box-sizing: border-box;
-	padding: .3vw 1vw;
+	padding: 6px 20px;
 	appearance: none;
 	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 10 5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 5L0 0h10z' fill='%23d0d0d0'/%3E%3C/svg%3E");
 	background-repeat: no-repeat;
-	background-position: right .6vw center;
-	background-size: 2vw;
+	background-position: right 12px center;
+	background-size: 40px;
 }
 
 .input select[multiple] {
 	display: block;
 	width: 100%;
-	padding: 0.5vw;
+	padding: 10px;
 	margin-bottom: vw;
-	border: .1vw solid #ced4da;
-	border-radius: 0.1vw;
+	border: 2px solid #ced4da;
+	border-radius: 2px;
 	background-color: #fff;
 	color: #495057;
-	font-size: 1.3vw;
+	font-size: 26px;
 	line-height: 1.5;
 	font-family: inherit;
-	border-radius: .5vw;
+	border-radius: 10px;
 }
 
 .input select[multiple] option {
-	padding: .6vw;
-	border-radius: .5vw;
+	padding: 12px;
+	border-radius: 10px;
 }
 
 
 .input_select_wrapper {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 	align-items: center;
-	margin-bottom: 1vw;
+	margin-bottom: 20px;
+	width: auto;
 }
 
 
@@ -358,7 +359,7 @@ strong {
 }
 
 .input_select_wrapper > select:not([multiple]) {
-	padding: 1vw 1.5vw;
+	padding: 20px 30px;
 	font-weight: bold;
 }
 
@@ -367,30 +368,30 @@ strong {
 .input_select_wrapper > input[type="number"],
 .input_select_wrapper > select {
   flex: 0 1 auto;
-  margin-right: 1vw;
+  margin-right: 20px;
   width: 100%;
-  max-width: 18vw;
+  max-width: 360px;
 }
 
 .input_select_wrapper > input[type="range"] {
   flex: 1 1 auto;
-  margin-right: 1vw;
+  margin-right: 20px;
 }
 
 .input_select_wrapper input[type="range"] {
 	-webkit-appearance: none;
 	width: 100%;
-	height: 1vw;
+	height: 20px;
 	background: #f5f5f5;
-	border-radius: .5vw;
-	margin-top: .5vw;
+	border-radius: 10px;
+	margin-top: 10px;
 }
 
 .input_select_wrapper input[type="range"]::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	appearance: none;
-	width: 2vw;
-	height: 2vw;
+	width: 40px;
+	height: 40px;
 	border-radius: 50%;
 	background-color: #0077cc;
 	cursor: pointer;
@@ -402,20 +403,20 @@ strong {
 	flex-wrap: wrap;
 	align-items: center;
 	flex-direction: row;
-	margin-bottom: 0.8vw;
+	margin-bottom: 16px;
 }
 
 .checkbox_wrapper > label {
 	display: inline-flex;
-  margin-right: 0.8vw;
+  	margin-right: 16px;
 }
 
 .checkbox_wrapper > input[type="checkbox"] {
 	display: inline-flex;
 	flex: 0 1 auto;
-	margin-right: .1vw;
-	width: 1.1vw;
-	height: 1.1vw;
+	margin-right: 2px;
+	width: 22px;
+	height: 22px;
 	align-items: center;
 }
 
@@ -423,14 +424,14 @@ strong {
 
 /* style for form button */
 button {
-	padding: 1vw 2vw;
+	padding: 20px 40px;
 	border: none;
-	border-radius: .5vw;
+	border-radius: 10px;
 	background-color: #0077cc;
 	color: #fff;
-	font-size: 1.3vw;
+	font-size: 26px;
 	cursor: pointer;
-	margin-top: 1vw;
+	margin-top: 20px;
 }
 
 button:hover {
@@ -439,5 +440,32 @@ button:hover {
 
 button:focus {
 	outline: none;
-	box-shadow: 0 0 0 .2vw #fff, 0 0 0 .4vw #0077cc;
+	box-shadow: 0 0 0 4px #fff, 0 0 0 8px #0077cc;
+}
+
+/* Num Pad Button */
+div.num_pad_input_wrapper {
+	display: flex;
+	align-items: flex-start;
+}
+div.num_pad_grid {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	gap: 10px;
+
+	width: 300px;
+}
+
+button.num_button {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	height: 79px;
+	width: 79px;
+	background: #d7dce0;
+	color: #0066b3;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
 }
