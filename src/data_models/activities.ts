@@ -17,7 +17,7 @@ export const activities: Activity[] = [
 			num_participants_needed: new NumRange<number>(1, 1),
 			needInternet: false,
 			isProductive: YesNoCheckbox.Yes,
-			enjoyment_level: EnjoymentLevel.Pleasant,
+			enjoyment_level: EnjoymentLevel.Meh,
 			required_place: Place.Outdoors
 		}
 	),
@@ -28,21 +28,21 @@ export const activities: Activity[] = [
 			description: "",
 			duration_range: new NumRange<Duration>(
 				new Duration(10, UnitOfTime.Minutes),
-				new Duration(1, UnitOfTime.Hours),
+				new Duration(12, UnitOfTime.Hours),
 			),
 			required_focuses: [Focus.Textual],
 			required_devices: [Item.Phone], // TODO: And Or for devices like PHONE AND COMPUTER or PHONE OR COMPUTER
 			num_participants_needed: new NumRange<number>(1, 1),
-			needInternet: true,
+			needInternet: false,
 			isProductive: YesNoCheckbox.No,
-			enjoyment_level: EnjoymentLevel.Enjoyable,
+			enjoyment_level: EnjoymentLevel.Pleasant,
 			required_place: Place.Anywhere
 		}
 	),
 
 	new Activity(
 		{
-			name: "Steam Game",
+			name: "Play Any Steam Game",
 			description: "Play a game on steam",
 			duration_range: new NumRange<Duration>(
 				new Duration(30, UnitOfTime.Minutes),
@@ -53,14 +53,14 @@ export const activities: Activity[] = [
 			num_participants_needed: new NumRange<number>(1, 1),
 			needInternet: false,
 			isProductive: YesNoCheckbox.No,
-			enjoyment_level: EnjoymentLevel.Enjoyable,
+			enjoyment_level: EnjoymentLevel.Fun,
 			required_place: Place.Home
 		}
 	),
 
 	new Activity(
 		{
-			name: "Gartic Phone",
+			name: "Play Gartic Phone",
 			description: "Play a game of Gartic Phone with friends",
 			duration_range: new NumRange<Duration>(
 				new Duration(15, UnitOfTime.Minutes),
@@ -71,26 +71,8 @@ export const activities: Activity[] = [
 			num_participants_needed: new NumRange<number>(5, 30),
 			needInternet: true,
 			isProductive: YesNoCheckbox.No,
-			enjoyment_level: EnjoymentLevel.Enjoyable,
+			enjoyment_level: EnjoymentLevel.Fun,
 			required_place: Place.Home
-		}
-	),
-
-	new Activity(
-		{
-			name: "Message Friends",
-			description: "Message a friend about their life or your own",
-			duration_range: new NumRange<Duration>(
-				new Duration(1, UnitOfTime.Minutes),
-				new Duration(12, UnitOfTime.Hours),
-			),
-			required_focuses: [Focus.Social, Focus.Textual],
-			required_devices: [Item.Phone],
-			num_participants_needed: new NumRange<number>(1, 1),
-			needInternet: true,
-			isProductive: YesNoCheckbox.No,
-			enjoyment_level: EnjoymentLevel.Pleasant,
-			required_place: Place.Anywhere
 		}
 	),
 
@@ -107,25 +89,7 @@ export const activities: Activity[] = [
 			num_participants_needed: new NumRange<number>(1, 1),
 			needInternet: true,
 			isProductive: YesNoCheckbox.No,
-			enjoyment_level: EnjoymentLevel.Pleasant,
-			required_place: Place.Anywhere
-		}
-	),
-
-	new Activity(
-		{
-			name: "Check Grades",
-			description: "Check your grades and assignments on SIS",
-			duration_range: new NumRange<Duration>(
-				new Duration(0, UnitOfTime.Minutes),
-				new Duration(3, UnitOfTime.Minutes),
-			),
-			required_focuses: [Focus.Textual],
-			required_devices: [Item.Phone],
-			num_participants_needed: new NumRange<number>(1, 1),
-			needInternet: true,
-			isProductive: YesNoCheckbox.Yes,
-			enjoyment_level: EnjoymentLevel.Mediocre,
+			enjoyment_level: EnjoymentLevel.Fun,
 			required_place: Place.Anywhere
 		}
 	),
@@ -161,25 +125,7 @@ export const activities: Activity[] = [
 			num_participants_needed: new NumRange<number>(1, 1),
 			needInternet: true,
 			isProductive: YesNoCheckbox.Yes,
-			enjoyment_level: EnjoymentLevel.Mediocre,
-			required_place: Place.Anywhere
-		}
-	),
-
-	new Activity(
-		{
-			name: "Plan Out Day",
-			description: "Plan out everything you want to do today, tomorrow, this week, this month, or this year",
-			duration_range: new NumRange<Duration>(
-				new Duration(0, UnitOfTime.Minutes),
-				new Duration(20, UnitOfTime.Minutes),
-			),
-			required_focuses: [Focus.Textual, Focus.Engagement],
-			required_devices: [Item.Phone],
-			num_participants_needed: new NumRange<number>(1, 1),
-			needInternet: true,
-			isProductive: YesNoCheckbox.Yes,
-			enjoyment_level: EnjoymentLevel.Mediocre,
+			enjoyment_level: EnjoymentLevel.Meh,
 			required_place: Place.Anywhere
 		}
 	),
@@ -197,7 +143,7 @@ export const activities: Activity[] = [
 			num_participants_needed: new NumRange<number>(1, 1),
 			needInternet: false,
 			isProductive: YesNoCheckbox.No,
-			enjoyment_level: EnjoymentLevel.Enjoyable,
+			enjoyment_level: EnjoymentLevel.Pleasant,
 			required_place: Place.Anywhere
 		}
 	),
@@ -215,7 +161,7 @@ export const activities: Activity[] = [
 			num_participants_needed: new NumRange<number>(1, 1),
 			needInternet: false,
 			isProductive: YesNoCheckbox.Yes,
-			enjoyment_level: EnjoymentLevel.Pleasant,
+			enjoyment_level: EnjoymentLevel.Meh,
 			required_place: Place.Anywhere
 		}
 	),
@@ -233,7 +179,25 @@ export const activities: Activity[] = [
 			num_participants_needed: new NumRange<number>(1, 1),
 			needInternet: true,
 			isProductive: YesNoCheckbox.No,
-			enjoyment_level: EnjoymentLevel.Enjoyable,
+			enjoyment_level: EnjoymentLevel.Fun,
+			required_place: Place.Anywhere
+		}
+	),
+
+	new Activity(
+		{
+			name: "Watch A TV Series",
+			description: "Pick a long-term series to watch and watch it",
+			duration_range: new NumRange<Duration>(
+				new Duration(20, UnitOfTime.Minutes),
+				new Duration(12, UnitOfTime.Hours),
+			),
+			required_focuses: [Focus.Engagement, Focus.Auditory],
+			required_devices: [Item.Phone],
+			num_participants_needed: new NumRange<number>(1, 1),
+			needInternet: true,
+			isProductive: YesNoCheckbox.No,
+			enjoyment_level: EnjoymentLevel.Fun,
 			required_place: Place.Anywhere
 		}
 	),
@@ -251,7 +215,7 @@ export const activities: Activity[] = [
 			num_participants_needed: new NumRange<number>(1, 1),
 			needInternet: false,
 			isProductive: YesNoCheckbox.No,
-			enjoyment_level: EnjoymentLevel.Enjoyable,
+			enjoyment_level: EnjoymentLevel.Fun,
 			required_place: Place.Home
 		}
 	),
@@ -269,7 +233,43 @@ export const activities: Activity[] = [
 			num_participants_needed: new NumRange<number>(1, 1),
 			needInternet: true,
 			isProductive: YesNoCheckbox.No,
-			enjoyment_level: EnjoymentLevel.Enjoyable,
+			enjoyment_level: EnjoymentLevel.VeryFun,
+			required_place: Place.Anywhere
+		}
+	),
+
+	new Activity(
+		{
+			name: "Go On Reddit",
+			description: "",
+			duration_range: new NumRange<Duration>(
+				new Duration(5, UnitOfTime.Minutes),
+				new Duration(12, UnitOfTime.Hours),
+			),
+			required_focuses: [Focus.Visual, Focus.Engagement],
+			required_devices: [Item.Phone],
+			num_participants_needed: new NumRange<number>(1, 1),
+			needInternet: true,
+			isProductive: YesNoCheckbox.No,
+			enjoyment_level: EnjoymentLevel.VeryFun,
+			required_place: Place.Anywhere
+		}
+	),
+
+	new Activity(
+		{
+			name: "Make Oranges",
+			description: "",
+			duration_range: new NumRange<Duration>(
+				new Duration(30, UnitOfTime.Minutes),
+				new Duration(3, UnitOfTime.Hours),
+			),
+			required_focuses: [Focus.Visual, Focus.Engagement],
+			required_devices: [Item.Phone],
+			num_participants_needed: new NumRange<number>(1, 1),
+			needInternet: true,
+			isProductive: YesNoCheckbox.No,
+			enjoyment_level: EnjoymentLevel.Fun,
 			required_place: Place.Anywhere
 		}
 	),
@@ -305,7 +305,7 @@ export const activities: Activity[] = [
 			num_participants_needed: new NumRange<number>(1, 1),
 			needInternet: true,
 			isProductive: YesNoCheckbox.No,
-			enjoyment_level: EnjoymentLevel.Enjoyable,
+			enjoyment_level: EnjoymentLevel.Fun,
 			required_place: Place.Anywhere
 		}
 	),
@@ -323,7 +323,7 @@ export const activities: Activity[] = [
 			num_participants_needed: new NumRange<number>(1, 1),
 			needInternet: true,
 			isProductive: YesNoCheckbox.No,
-			enjoyment_level: EnjoymentLevel.Enjoyable,
+			enjoyment_level: EnjoymentLevel.Fun,
 			required_place: Place.Anywhere
 		}
 	),
@@ -348,24 +348,6 @@ export const activities: Activity[] = [
 
 	new Activity(
 		{
-			name: "Watch a TV Series",
-			description: "",
-			duration_range: new NumRange<Duration>(
-				new Duration(30, UnitOfTime.Minutes),
-				new Duration(12, UnitOfTime.Hours),
-			),
-			required_focuses: [Focus.Auditory, Focus.Visual],
-			required_devices: [Item.Computer],
-			num_participants_needed: new NumRange<number>(1, 1),
-			needInternet: true,
-			isProductive: YesNoCheckbox.No,
-			enjoyment_level: EnjoymentLevel.SuperFun,
-			required_place: Place.Home
-		}
-	),
-
-	new Activity(
-		{
 			name: "Watch a Movie",
 			description: "",
 			duration_range: new NumRange<Duration>(
@@ -377,7 +359,7 @@ export const activities: Activity[] = [
 			num_participants_needed: new NumRange<number>(1, 1),
 			needInternet: true,
 			isProductive: YesNoCheckbox.No,
-			enjoyment_level: EnjoymentLevel.SuperFun,
+			enjoyment_level: EnjoymentLevel.VeryFun,
 			required_place: Place.Home
 		}
 	),
@@ -395,7 +377,7 @@ export const activities: Activity[] = [
 			num_participants_needed: new NumRange<number>(1, 1),
 			needInternet: true,
 			isProductive: YesNoCheckbox.No,
-			enjoyment_level: EnjoymentLevel.SuperFun,
+			enjoyment_level: EnjoymentLevel.VeryFun,
 			required_place: Place.Home
 		}
 	),
@@ -413,7 +395,7 @@ export const activities: Activity[] = [
 			num_participants_needed: new NumRange<number>(1, 1),
 			needInternet: false,
 			isProductive: YesNoCheckbox.No,
-			enjoyment_level: EnjoymentLevel.Enjoyable,
+			enjoyment_level: EnjoymentLevel.Fun,
 			required_place: Place.Anywhere
 		}
 	),
@@ -431,7 +413,7 @@ export const activities: Activity[] = [
 			num_participants_needed: new NumRange<number>(1, 1),
 			needInternet: true,
 			isProductive: YesNoCheckbox.No,
-			enjoyment_level: EnjoymentLevel.Enjoyable,
+			enjoyment_level: EnjoymentLevel.Pleasant,
 			required_place: Place.Anywhere
 		}
 	),
@@ -449,7 +431,7 @@ export const activities: Activity[] = [
 			num_participants_needed: new NumRange<number>(1, 1),
 			needInternet: false,
 			isProductive: YesNoCheckbox.No,
-			enjoyment_level: EnjoymentLevel.Enjoyable,
+			enjoyment_level: EnjoymentLevel.Fun,
 			required_place: Place.Anywhere
 		}
 	),
@@ -467,7 +449,7 @@ export const activities: Activity[] = [
 			num_participants_needed: new NumRange<number>(1, 1),
 			needInternet: false,
 			isProductive: YesNoCheckbox.No,
-			enjoyment_level: EnjoymentLevel.Enjoyable,
+			enjoyment_level: EnjoymentLevel.Fun,
 			required_place: Place.Anywhere
 		}
 	),
@@ -485,7 +467,7 @@ export const activities: Activity[] = [
 			num_participants_needed: new NumRange<number>(1, 1),
 			needInternet: false,
 			isProductive: YesNoCheckbox.No,
-			enjoyment_level: EnjoymentLevel.Enjoyable,
+			enjoyment_level: EnjoymentLevel.Pleasant,
 			required_place: Place.Anywhere
 		}
 	),
@@ -510,7 +492,7 @@ export const activities: Activity[] = [
 
 	new Activity(
 		{
-			name: "Play Minecraft",
+			name: "Play Minecraft Multiplayer",
 			description: "",
 			duration_range: new NumRange<Duration>(
 				new Duration(30, UnitOfTime.Minutes),
@@ -521,8 +503,98 @@ export const activities: Activity[] = [
 			num_participants_needed: new NumRange<number>(1, 25),
 			needInternet: true,
 			isProductive: YesNoCheckbox.No,
-			enjoyment_level: EnjoymentLevel.Enjoyable,
+			enjoyment_level: EnjoymentLevel.VeryFun,
 			required_place: Place.Anywhere
+		}
+	),
+
+	new Activity(
+		{
+			name: "Play Super Mario Sluggers",
+			description: "",
+			duration_range: new NumRange<Duration>(
+				new Duration(30, UnitOfTime.Minutes),
+				new Duration(12, UnitOfTime.Hours),
+			),
+			required_focuses: [Focus.Engagement, Focus.Visual],
+			required_devices: [Item.GameConsole],
+			num_participants_needed: new NumRange<number>(1, 4),
+			needInternet: false,
+			isProductive: YesNoCheckbox.No,
+			enjoyment_level: EnjoymentLevel.Fun,
+			required_place: Place.Home
+		}
+	),
+
+	new Activity(
+		{
+			name: "Play Splatoon",
+			description: "",
+			duration_range: new NumRange<Duration>(
+				new Duration(30, UnitOfTime.Minutes),
+				new Duration(12, UnitOfTime.Hours),
+			),
+			required_focuses: [Focus.Engagement, Focus.Visual],
+			required_devices: [Item.GameConsole],
+			num_participants_needed: new NumRange<number>(1, 1),
+			needInternet: false,
+			isProductive: YesNoCheckbox.No,
+			enjoyment_level: EnjoymentLevel.Fun,
+			required_place: Place.Home
+		}
+	),
+
+	new Activity(
+		{
+			name: "Play Super Mario Galaxy 1",
+			description: "",
+			duration_range: new NumRange<Duration>(
+				new Duration(30, UnitOfTime.Minutes),
+				new Duration(12, UnitOfTime.Hours),
+			),
+			required_focuses: [Focus.Engagement, Focus.Visual],
+			required_devices: [Item.GameConsole],
+			num_participants_needed: new NumRange<number>(1, 2),
+			needInternet: false,
+			isProductive: YesNoCheckbox.No,
+			enjoyment_level: EnjoymentLevel.Fun,
+			required_place: Place.Home
+		}
+	),
+
+	new Activity(
+		{
+			name: "Play Super Mario Galaxy 2",
+			description: "",
+			duration_range: new NumRange<Duration>(
+				new Duration(30, UnitOfTime.Minutes),
+				new Duration(12, UnitOfTime.Hours),
+			),
+			required_focuses: [Focus.Engagement, Focus.Visual],
+			required_devices: [Item.GameConsole],
+			num_participants_needed: new NumRange<number>(1, 2),
+			needInternet: false,
+			isProductive: YesNoCheckbox.No,
+			enjoyment_level: EnjoymentLevel.Fun,
+			required_place: Place.Home
+		}
+	),
+
+	new Activity(
+		{
+			name: "Play Just Dance",
+			description: "",
+			duration_range: new NumRange<Duration>(
+				new Duration(30, UnitOfTime.Minutes),
+				new Duration(12, UnitOfTime.Hours),
+			),
+			required_focuses: [Focus.Engagement, Focus.Visual],
+			required_devices: [Item.GameConsole],
+			num_participants_needed: new NumRange<number>(1, 4),
+			needInternet: false,
+			isProductive: YesNoCheckbox.No,
+			enjoyment_level: EnjoymentLevel.Fun,
+			required_place: Place.Home
 		}
 	),
 
@@ -539,7 +611,7 @@ export const activities: Activity[] = [
 			num_participants_needed: new NumRange<number>(1, 8),
 			needInternet: false,
 			isProductive: YesNoCheckbox.No,
-			enjoyment_level: EnjoymentLevel.Enjoyable,
+			enjoyment_level: EnjoymentLevel.Fun,
 			required_place: Place.Home
 		}
 	),
@@ -557,7 +629,7 @@ export const activities: Activity[] = [
 			num_participants_needed: new NumRange<number>(1, 1),
 			needInternet: true,
 			isProductive: YesNoCheckbox.Yes,
-			enjoyment_level: EnjoymentLevel.Enjoyable,
+			enjoyment_level: EnjoymentLevel.Pleasant,
 			required_place: Place.Anywhere
 		}
 	),
@@ -572,24 +644,6 @@ export const activities: Activity[] = [
 			),
 			required_focuses: [Focus.Textual, Focus.Engagement],
 			required_devices: [Item.Phone],
-			num_participants_needed: new NumRange<number>(1, 1),
-			needInternet: true,
-			isProductive: YesNoCheckbox.Yes,
-			enjoyment_level: EnjoymentLevel.Boring,
-			required_place: Place.Anywhere
-		}
-	),
-
-	new Activity(
-		{
-			name: "Answer Your Youtube Comments",
-			description: "",
-			duration_range: new NumRange<Duration>(
-				new Duration(10, UnitOfTime.Minutes),
-				new Duration(12, UnitOfTime.Hours),
-			),
-			required_focuses: [Focus.Textual, Focus.Engagement],
-			required_devices: [Item.Computer],
 			num_participants_needed: new NumRange<number>(1, 1),
 			needInternet: true,
 			isProductive: YesNoCheckbox.Yes,
@@ -636,6 +690,24 @@ export const activities: Activity[] = [
 
 	new Activity(
 		{
+			name: "Organize iPhone Photos",
+			description: "",
+			duration_range: new NumRange<Duration>(
+				new Duration(0, UnitOfTime.Minutes),
+				new Duration(1, UnitOfTime.Hours),
+			),
+			required_focuses: [Focus.Visual],
+			required_devices: [Item.Phone],
+			num_participants_needed: new NumRange<number>(1, 1),
+			needInternet: false,
+			isProductive: YesNoCheckbox.Yes,
+			enjoyment_level: EnjoymentLevel.Meh,
+			required_place: Place.Anywhere
+		}
+	),
+
+	new Activity(
+		{
 			name: "Sync Music To Phone",
 			description: "",
 			duration_range: new NumRange<Duration>(
@@ -665,7 +737,7 @@ export const activities: Activity[] = [
 			num_participants_needed: new NumRange<number>(1, 1),
 			needInternet: false,
 			isProductive: YesNoCheckbox.Yes,
-			enjoyment_level: EnjoymentLevel.Mediocre,
+			enjoyment_level: EnjoymentLevel.Pleasant,
 			required_place: Place.Anywhere
 		}
 	),
@@ -693,7 +765,7 @@ export const activities: Activity[] = [
 			name: "Release LL Supporter Vids",
 			description: "Upload the existing LL supporter videos to an extras channel",
 			duration_range: new NumRange<Duration>(
-				new Duration(30, UnitOfTime.Minutes),
+				new Duration(15, UnitOfTime.Minutes),
 				new Duration(12, UnitOfTime.Hours),
 			),
 			required_focuses: [Focus.Engagement],
@@ -719,25 +791,7 @@ export const activities: Activity[] = [
 			num_participants_needed: new NumRange<number>(1, 1),
 			needInternet: true,
 			isProductive: YesNoCheckbox.Yes,
-			enjoyment_level: EnjoymentLevel.Boring,
-			required_place: Place.Anywhere
-		}
-	),
-
-	new Activity(
-		{
-			name: "Organize Phone Photos",
-			description: "",
-			duration_range: new NumRange<Duration>(
-				new Duration(10, UnitOfTime.Minutes),
-				new Duration(12, UnitOfTime.Hours),
-			),
-			required_focuses: [Focus.Visual, Focus.Engagement],
-			required_devices: [Item.Phone],
-			num_participants_needed: new NumRange<number>(1, 1),
-			needInternet: false,
-			isProductive: YesNoCheckbox.Yes,
-			enjoyment_level: EnjoymentLevel.Mediocre,
+			enjoyment_level: EnjoymentLevel.Meh,
 			required_place: Place.Anywhere
 		}
 	),
@@ -750,12 +804,12 @@ export const activities: Activity[] = [
 				new Duration(10, UnitOfTime.Minutes),
 				new Duration(12, UnitOfTime.Hours),
 			),
-			required_focuses: [Focus.Visual, Focus.Engagement],
+			required_focuses: [Focus.Visual],
 			required_devices: [Item.Computer],
 			num_participants_needed: new NumRange<number>(1, 1),
 			needInternet: false,
 			isProductive: YesNoCheckbox.Yes,
-			enjoyment_level: EnjoymentLevel.Mediocre,
+			enjoyment_level: EnjoymentLevel.Meh,
 			required_place: Place.Anywhere
 		}
 	),
@@ -773,7 +827,7 @@ export const activities: Activity[] = [
 			num_participants_needed: new NumRange<number>(1, 1),
 			needInternet: true,
 			isProductive: YesNoCheckbox.Yes,
-			enjoyment_level: EnjoymentLevel.Enjoyable,
+			enjoyment_level: EnjoymentLevel.Fun,
 			required_place: Place.Home
 		}
 	),

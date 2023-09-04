@@ -41,10 +41,10 @@ export enum YesNoCheckbox {
 export enum EnjoymentLevel {
 	Unpleasent,
 	Boring,
-	Mediocre,
+	Meh,
 	Pleasant,
-	Enjoyable,
-	SuperFun,
+	Fun,
+	VeryFun,
 }
 
 export function getEnumFromValue(enum_obj: object, value: any) {
